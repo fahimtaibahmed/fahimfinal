@@ -1,0 +1,15 @@
+.welcome-card ion-img {
+  object-fit: resize;
+  height: 25vh;
+  width: auto !important;
+  border: 0;
+  padding: 0;
+  background-color: black;
+}
+ion-button{
+  color:rgb(8, 233, 8);
+}
+ion-card-content, ion-card-header, ion-card-title{
+  background-color:black;
+  color:white;
+}

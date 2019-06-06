@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>predictionForm</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<form #predictionForm="ngForm" (ngSubmit)="predict(ngForm)">
+    <ion-item-divider>  
+      <ion-input  name="Preg" id="Preg" type="number" placeholder="Number of Pregnancies 0-17" [(ngModel)]="PregValue" [ngModelOptions]="{standalone: true}" class="form-control" #PregControl="ngModel"></ion-input>
+    </ion-item-divider>
+  <!-- <div>touched: {{PregControl.touched}}</div>
+  <div>untouched: {{PregControl.untouched}}</div> -->
+  <ion-item-divider>
+    <ion-input  name="Glu" id="Glu" type="number" placeholder="Glucose Value 0-199" [(ngModel)]="GluValue" [ngModelOptions]="{standalone: true}" class="form-control" #GluControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>
+     <ion-input  name="BP" id="BP" type="number" placeholder="BloodPressure 0-122" [(ngModel)]="BPValue" [ngModelOptions]="{standalone: true}" class="form-control" #BPControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>
+    <ion-input  name="ST" id="ST" type="number" placeholder="Skin Thickness 0-99" [(ngModel)]="STValue" [ngModelOptions]="{standalone: true}" class="form-control" #STControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>
+      <ion-input  name="Ins" id="Ins" type="number" placeholder="Insulin 0-846" [(ngModel)]="InsValue" [ngModelOptions]="{standalone: true}" class="form-control" #InsControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>  
+    <ion-input  name="BMI" id="BMI" type="number" placeholder="BMI 0-67.1" [(ngModel)]="BMIValue" [ngModelOptions]="{standalone: true}" class="form-control" #BMIControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>  
+    <ion-input  name="DPF" id="DPF" type="number" placeholder="Diabetes Pedigree Function 0.08 - 2.42" [(ngModel)]="DPFValue" [ngModelOptions]="{standalone: true}" class="form-control" #DPFControl="ngModel"></ion-input>
+  </ion-item-divider>
+  <ion-item-divider>
+      <ion-input  name="Age" id="Age" type="number" placeholder="Age 21 - 81" [(ngModel)]="AgeValue" [ngModelOptions]="{standalone: true}" class="form-control" #AgeControl="ngModel"></ion-input>
+  </ion-item-divider>
+    <ion-button fill="solid" expand="block" (click)="predict()" color="dark" style="margin-top:30px;">Run prediction</ion-button>
+</form>
+</ion-content>
+
+

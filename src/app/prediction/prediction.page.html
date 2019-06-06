@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>prediction</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" routerLink="/home">Home
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div *ngIf='displayLoading' id="loading">
+  <ion-img src="/assets/loading.gif"></ion-img>
+</div>
+  <ion-card *ngIf=true id="card1">
+  <ion-card-header>
+    <ion-card-subtitle>Prediction Results</ion-card-subtitle>
+    <ion-card-title>Lifestyle Choice A:               0 - 20%</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   Keep it up! Your chances of contracting Type 2 diabetes are slim. However, you should still maintain a healthy lifestyle by eating and exercising regularly. You can find more information on how to be healthy and eating the correct foods online which will decrease the chances of diabetes in the future. 
+  </ion-card-content>
+</ion-card>
+<ion-card *ngIf=true id="card2">
+  <ion-card-header>
+    <ion-card-subtitle>Prediction Results</ion-card-subtitle>
+    <ion-card-title>Lifestyle Choice B:               21-40%</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   Be careful. Your percentage level can increase or decrease depending on your lifestyle. Eat healthier and maintain a balanced diet, concentrating on eating only as much as your body needs. Also exercise from time to time as this is good for your body. Continue this and you’ll quickly see your risk percentage decreasing. 
+  </ion-card-content>
+</ion-card>
+<ion-card *ngIf=true id="card3">
+  <ion-card-header>
+    <ion-card-subtitle>Prediction Results</ion-card-subtitle>
+    <ion-card-title>Lifestyle Choice C:               41-60%</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   You may have a possible risk of getting pre-diabetes, therefore it is best to change your lifestyle. If you're overweight, your prediabetes will most likely turn into diabetes - dropping even as little as 5 - 10% of body weight makes a vast difference. Achieve this by consuming low-fat proteins and vegetables, and limiting calories, sugars and starchy carbs. Quitting smoking, drinking alcohol only moderately (if you drink already), and reducing stress all help keep your blood glucose levels under control. Speak to your GP about joining a Type 2 diabetes prevention program. 
+  </ion-card-content>
+</ion-card>
+<ion-card *ngIf=true id="card4">
+  <ion-card-header>
+    <ion-card-subtitle>Prediction Results</ion-card-subtitle>
+    <ion-card-title>Lifestyle Choice D:               61-100%</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+  Contact your GP. You have a significant risk of potentially getting diabetes in the future. Improve your lifestyle by incorporating at least 30 minutes of exercise into your daily regime. If you’re stressed at work or school, deep breathing yoga and Pilates to help relax your mind. If you smoke, STOP! This will only increase your risk - talk with your doctor about ways to quit. Your doctor can also help you with diet, and joining a Type 2 diabetes prevention program.  
+  </ion-card-content>
+</ion-card>
+
+ <h2 padding>Bar Chart</h2>
+  <div id="barChart"></div>
+  <h5 text-center>Glucose statistics for different diabetes pedigree function outcome</h5>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "fahimDiabetesApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "84628e94"
+}

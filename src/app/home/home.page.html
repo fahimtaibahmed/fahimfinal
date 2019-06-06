@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/bg.png"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle style="color:red;">Warning!</ion-card-subtitle>
+        <ion-card-title>Welcome to Fahim's Diabetic App</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>This app uses AI to attempt an accurate prognostics for diabetes in females of age 18 - 81 and should not be used as a means of treatment or a substitute for professional diagnostics.</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Resources</ion-label>
+      </ion-list-header>
+      <ion-item href="https://www.nhs.uk/conditions/diabetes/">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>NHS Diabetes Info</ion-label>
+      </ion-item>
+      <ion-button shape="round" expand="block" color="dark" href="/prediction-form">Get Prediction</ion-button>
+    </ion-list>
+</ion-content>

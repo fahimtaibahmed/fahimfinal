@@ -1,0 +1,13 @@
+{
+    "name": "FahimDiabetesApp",
+    "type": "angular",
+    "id": "abc123",
+  
+   
+    "integrations": {
+      "cordova": {
+      }
+    },
+    "hooks": {
+    }
+  }
