@@ -16,7 +16,8 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'prediction-form', loadChildren: './prediction-form/prediction-form.module#PredictionFormPageModule' },
-  { path: 'prediction', loadChildren: './prediction/prediction.module#PredictionPageModule' }
+  { path: 'prediction', loadChildren: './prediction/prediction.module#PredictionPageModule' },  { path: 'risk-form', loadChildren: './risk-form/risk-form.module#RiskFormPageModule' }
+
 ];
 
 @NgModule({
