@@ -86,7 +86,7 @@ export class RiskFormPage implements OnInit {
                 'as soon as you can. Please contact them on <a href="https://www.nhs.uk/conditions/Diabetes/">Diabetes</a> ' +
                 'and a member of the NHS Diabetes Team will be in contact with you.';
     }
-    console.log(message);
+    alert(message);
     return message;
   }
 }
