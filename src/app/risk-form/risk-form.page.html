@@ -14,25 +14,25 @@
           <ion-item>
             <ion-col col-md-3>
               <ion-label>1-25</ion-label>
-              <ion-radio name="age" value="1-25"></ion-radio>
+              <ion-radio name="age" value="0"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>26-40</ion-label>
-              <ion-radio name="age" value="26-40"></ion-radio>
+              <ion-radio name="age" value="5"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>41-60</ion-label>
-              <ion-radio  name="age" value="41-60"></ion-radio>
+              <ion-radio  name="age" value="8"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>60+</ion-label>
-              <ion-radio  name="age" value="60+"></ion-radio>
+              <ion-radio  name="age" value="10"></ion-radio>
             </ion-col>
           </ion-item>
         </ion-row>
@@ -47,25 +47,25 @@
           <ion-item>
             <ion-col col-md-3>
               <ion-label>0-25</ion-label>
-              <ion-radio name="bmi" value="0-25"></ion-radio>
+              <ion-radio name="bmi" value="0"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>26-30</ion-label>
-              <ion-radio name="bmi" value="26-30"></ion-radio>
+              <ion-radio name="bmi" value="1"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>31-35</ion-label>
-              <ion-radio name="bmi" value="31-35"></ion-radio>
+              <ion-radio name="bmi" value="9"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>35+</ion-label>
-              <ion-radio name="bmi" value="35+"></ion-radio>
+              <ion-radio name="bmi" value="10"></ion-radio>
             </ion-col>
           </ion-item>
         </ion-row>
@@ -80,25 +80,25 @@
           <ion-item>
             <ion-col col-md-3>
               <ion-label>No</ion-label>
-              <ion-radio name="dpf" value="no"></ion-radio>
+              <ion-radio name="dpf" value="0"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>Grandparent</ion-label>
-              <ion-radio name="dpf" value="grandparent"></ion-radio>
+              <ion-radio name="dpf" value="7"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>Sibling</ion-label>
-              <ion-radio name="dpf" value="sibling"></ion-radio>
+              <ion-radio name="dpf" value="15"></ion-radio>
             </ion-col>
           </ion-item>
           <ion-item>
             <ion-col col-md-3>
               <ion-label>Parent</ion-label>
-              <ion-radio name="dpf" value="parent"></ion-radio>
+              <ion-radio name="dpf" value="16"></ion-radio>
             </ion-col>
           </ion-item>
         </ion-row>
@@ -113,30 +113,30 @@
               <ion-item>
                 <ion-col col-md-3>
                   <ion-label>Low sugar</ion-label>
-                  <ion-radio name="diet" value="lowSugar"></ion-radio>
+                  <ion-radio name="diet" value="0"></ion-radio>
                 </ion-col>
               </ion-item>
               <ion-item>
                 <ion-col col-md-3>
                   <ion-label>Normal Sugar</ion-label>
-                  <ion-radio name="diet" value="normalSugar"></ion-radio>
+                  <ion-radio name="diet" value="1"></ion-radio>
                 </ion-col>
               </ion-item>
               <ion-item>
                 <ion-col col-md-3>
                   <ion-label>Quite high sugar</ion-label>
-                  <ion-radio name="diet" value="quiteHighSugar"></ion-radio>
+                  <ion-radio name="diet" value="7"></ion-radio>
                 </ion-col>
               </ion-item>
               <ion-item>
                 <ion-col col-md-3>
                   <ion-label>High Sugar</ion-label>
-                  <ion-radio name="diet" value="highSugar"></ion-radio>
+                  <ion-radio name="diet" value="10"></ion-radio>
                 </ion-col>
               </ion-item>
             </ion-row>
       </ion-radio-group>
     </ion-list>
-    <ion-button fill="solid" expand="block" (click)="Assess()" color="success" style="margin-top:30px;">Assess</ion-button>
+    <ion-button fill="solid" expand="block" (click)="getMessage()" color="success" style="margin-top:30px;">Assess</ion-button>
   </form>
 </ion-content>
