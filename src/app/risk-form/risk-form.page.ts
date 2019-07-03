@@ -33,7 +33,7 @@ export class RiskFormPage implements OnInit {
 
   Assess() {
     const value = {age: 0, bmi: 0, family: 0, diet: 0};
-    const result = [];
+    const result: string[] = [];
     value.age = parseInt(this.age, 10);
     value.bmi = parseInt(this.bmi, 10);
     value.family = parseInt(this.dpf, 10);
@@ -45,7 +45,7 @@ export class RiskFormPage implements OnInit {
         }
     }
     console.log(result);
-    return [this.sum(result), result];
+    return [this.sum(result), result, result.length];
   }
 
   highRisk(row) {
@@ -81,7 +81,7 @@ export class RiskFormPage implements OnInit {
                 'https://www.diabetes.co.uk/diet/nhs-diet-advice.html</a>.';
     } else {
       message = 'Your results show that you currently have a HIGH risk of ' +
-                'developing diabetes. ' + (results[1].length > 0 ? this.highRisk(results[1]) : '') +
+                'developing diabetes. ' + (results[2] > 0 ? this.highRisk(results[1]) : '') +
                 'We advise that you contact the NHS to discuss your risk factors ' +
                 'as soon as you can. Please contact them on <a href="https://www.nhs.uk/conditions/Diabetes/">Diabetes</a> ' +
                 'and a member of the NHS Diabetes Team will be in contact with you.';
