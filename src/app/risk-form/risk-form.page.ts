@@ -32,7 +32,7 @@ export class RiskFormPage implements OnInit {
   }
 
   Assess() {
-    const value = {};
+    const value = {age: 0, bmi: 0, family: 0, diet: 0};
     const result = [];
     value.age = parseInt(this.age, 10);
     value.bmi = parseInt(this.bmi, 10);
