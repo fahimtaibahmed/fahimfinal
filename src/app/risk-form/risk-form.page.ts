@@ -70,21 +70,24 @@ export class RiskFormPage implements OnInit {
     let message = '';
     const results = this.Assess();
     if (results[0] <= 15) {
-      message = 'Your results show that you currently have a low risk of ' +
-                'developing diabetes. However, it is important that you ' +
-                'maintain a healthy lifestyle in terms of diet and exercise.';
+      message = 'Keep it up! Your chances of contracting Type 2 diabetes are slim' +
+                ' However, you should still maintain a healthy lifestyle by eating and exercising regularly' +
+                ' You can find more information on how to be healthy and eating the correct foods online' +
+                ' at https://www.nhs.uk/conditions/type-2-diabetes/food-and-keeping-active/ which will decrease the chances of diabetes in the future';
     } else if (results[0] > 15 && results[0] <= 25) {
-      message = 'Your results show that you currently have a medium risk of ' +
-                'developing diabetes. For more information on your risk ' +
-                'factors, and what to do about them, please visit our diabetes ' +
-                'advice website at <a href="https://www.diabetes.co.uk/diet/nhs-diet-advice.html">' +
-                'https://www.diabetes.co.uk/diet/nhs-diet-advice.html</a>.';
+      message = ' You may have a possible risk of getting pre-diabetes, therefore it is best to change your lifestyle ' +
+                ' If you are overweight, your prediabetes will most likely turn into diabetes & dropping even as little as 5 - 10% of body weight makes a vast difference' +
+                ' Achieve this by consuming low-fat proteins and vegetables, and limiting calories, sugars and starchy carbs ' +
+                ' Quitting smoking, drinking alcohol only moderately (if you drink already), and reducing stress will help keep your blood glucose levels under control. ' +
+                ' Speak to your GP about joining a Type 2 diabetes prevention program';
     } else {
-      message = 'Your results show that you currently have a HIGH risk of ' +
-                'developing diabetes. ' + (results[2] > 0 ? this.highRisk(results[1]) : '') +
-                'We advise that you contact the NHS to discuss your risk factors ' +
-                'as soon as you can. Please contact them on <a href="https://www.nhs.uk/conditions/Diabetes/">Diabetes</a> ' +
-                'and a member of the NHS Diabetes Team will be in contact with you.';
+      message = ' You should contact your GP, Your results show that you have a significant risk of potentially' +
+                ' developing diabetes in the future. ' + (results[2] > 0 ? this.highRisk(results[1]) : '') +
+                ' We advise that you contact the NHS to discuss your risk factors ' +
+                ' as soon as you can. Also Improve your lifestyle by incorporating at least 30 minutes of exercise into your daily regime' +
+                ' If you’re stressed at work or school, deep breathing yoga and Pilates to help relax your mind' +
+                ' If you smoke, STOP! This will only increase your risk - talk with your doctor about ways to quit' +
+                ' Your doctor can also help you with diet, and joining a Type 2 diabetes prevention program';
     }
     alert(message);
     return message;

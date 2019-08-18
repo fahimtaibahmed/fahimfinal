@@ -7,7 +7,7 @@
   <form>
     <ion-list age="age">
       <ion-radio-group [(ngModel)]="age" [ngModelOptions]="{standalone: true}">
-        <ion-list-header color="secondary">
+        <ion-list-header color="dark">
           How old are you?
         </ion-list-header>
         <ion-row>
@@ -40,7 +40,7 @@
     </ion-list>
     <ion-list bmi="bmi">
       <ion-radio-group [(ngModel)]="bmi" [ngModelOptions]="{standalone: true}">
-        <ion-list-header color="secondary">
+        <ion-list-header color="dark">
           What is your BMI?
         </ion-list-header>
         <ion-row>
@@ -73,7 +73,7 @@
     </ion-list>
     <ion-list dpf="dpf">
       <ion-radio-group [(ngModel)]="dpf" [ngModelOptions]="{standalone: true}">
-        <ion-list-header color="secondary">
+        <ion-list-header color="dark">
           Does anybody in your family have diabetes?
         </ion-list-header>
         <ion-row>
@@ -106,7 +106,7 @@
     </ion-list>
     <ion-list diet="diet">
       <ion-radio-group [(ngModel)]="diet" [ngModelOptions]="{standalone: true}">
-          <ion-list-header color="secondary">
+          <ion-list-header color="dark">
             How would you describe your diet?
           </ion-list-header>
             <ion-row>
@@ -137,6 +137,6 @@
             </ion-row>
       </ion-radio-group>
     </ion-list>
-    <ion-button fill="solid" expand="block" (click)="getMessage()" color="success" style="margin-top:30px;">Assess</ion-button>
+    <ion-button fill="outline" expand="block" (click)="getMessage()" color="green" style="margin-top:30px;">Assess</ion-button>
   </form>
 </ion-content>

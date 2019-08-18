@@ -13,11 +13,19 @@
     <ion-card class="welcome-card">
       <ion-img src="/assets/bg.png"></ion-img>
       <ion-card-header>
-        <ion-card-subtitle style="color:red;">Warning!</ion-card-subtitle>
-        <ion-card-title>Welcome to Fahim's Diabetic App</ion-card-title>
+        <div class="ion-text-center">
+        <ion-card-subtitle style="color:orangered;">Detect Diabetes Before Diagnosis!</ion-card-subtitle>
+        </div>
+        <div class="ion-text-center">
+        <ion-card-title>Find Out About Your Risk</ion-card-title>
+        </div>
       </ion-card-header>
       <ion-card-content>
-        <p>This app uses AI to attempt an accurate prognostics for diabetes in females of age 18 - 81 and should not be used as a means of treatment or a substitute for professional diagnostics.</p>
+          <div class="ion-text-center">
+          <p> Please note this application is only used to aid diagnosis and cannot at any point be a standalone diagnostic product</p>
+          <br>
+      <p>Before filling out the risk assesment, you will need to know your age, BMI value, family history of diabetes and sugar diet</p>
+      </div>
       </ion-card-content>
     </ion-card>
     <ion-list lines="none">
@@ -28,6 +36,6 @@
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
         <ion-label>NHS Diabetes Info</ion-label>
       </ion-item>
-      <ion-button shape="round" expand="block" color="dark" href="/risk-form">Get Prediction</ion-button>
+      <ion-button shape="round" expand="block" color="dark" href="/risk-form">Find Out Your Risk</ion-button>
     </ion-list>
 </ion-content>
